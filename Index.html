@@ -40,7 +40,7 @@ nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: var(--white);
+  background-color: #FFFFFF;
   border-bottom: 1px solid #EEEEEE;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 .nav-icon {
   width: 40px;
   height: 40px;
-  background: var(--black);
+  background-color: #0D0D0D;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -82,13 +82,13 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
-  color: var(--black);
+  color: #0D0D0D !important;
 }
 
 .nav-brand span:last-child {
   font-size: 10px;
   font-weight: 300;
-  color: var(--gray-mid);
+  color: #555555 !important;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -104,23 +104,23 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
-  color: var(--black);
+  color: #0D0D0D !important;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  transition: color var(--transition);
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover { color: #1E6FAD; }
 
 .nav-cta {
-  background: var(--black);
-  color: var(--white) !important;
+  background-color: #0D0D0D;
+  color: #FFFFFF !important;
   padding: 10px 24px;
   border-radius: 2px;
   transition: background var(--transition) !important;
 }
 
-.nav-cta:hover { background: var(--accent) !important; color: var(--white) !important; }
+.nav-cta:hover { background-color: #1E6FAD !important; color: #FFFFFF !important; }
 
 .hamburger {
   display: none;
@@ -136,7 +136,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--black);
+  background-color: #0D0D0D;
   transition: var(--transition);
 }
 
@@ -212,8 +212,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 }
 
 .btn-primary {
-  background: var(--black);
-  color: var(--white);
+  background-color: #0D0D0D;
+  color: #FFFFFF;
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
@@ -226,7 +226,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   cursor: pointer;
 }
 
-.btn-primary:hover { background: var(--accent); }
+.btn-primary:hover { background-color: #1E6FAD; }
 
 .btn-secondary {
   color: #0D0D0D;
@@ -286,7 +286,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 }
 
 .hero-right {
-  background: var(--black);
+  background-color: #0D0D0D;
   position: relative;
   display: flex;
   align-items: center;
@@ -322,13 +322,13 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   font-family: 'Bebas Neue', sans-serif;
   font-size: 42px;
   letter-spacing: 2px;
-  color: var(--white);
+  color: #FFFFFF;
   line-height: 1.1;
   margin-bottom: 16px;
 }
 
 .hero-quote em {
-  color: var(--accent);
+  color: #1E6FAD;
   font-style: normal;
 }
 
@@ -391,7 +391,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 }
 
 .about-card {
-  background: var(--black);
+  background-color: #0D0D0D;
   padding: 56px 48px;
   position: relative;
   overflow: hidden;
@@ -402,20 +402,20 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 4px;
-  background: var(--accent);
+  background-color: #1E6FAD;
 }
 
 .about-card-quote {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 48px;
   letter-spacing: 2px;
-  color: var(--white);
+  color: #FFFFFF;
   line-height: 1.1;
   margin-bottom: 24px;
 }
 
 .about-card-quote em {
-  color: var(--accent);
+  color: #1E6FAD;
   font-style: normal;
 }
 
@@ -438,7 +438,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #1E6FAD;
   border: 1px solid rgba(30,111,173,0.4);
   padding: 6px 14px;
   border-radius: 2px;
@@ -462,7 +462,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 }
 
 .service-card {
-  background: var(--white);
+  background-color: #FFFFFF;
   padding: 48px 40px;
   transition: transform var(--transition), box-shadow var(--transition);
   position: relative;
@@ -475,7 +475,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   bottom: 0; left: 0;
   width: 0;
   height: 3px;
-  background: var(--accent);
+  background-color: #1E6FAD;
   transition: width 0.4s ease;
 }
 
@@ -485,7 +485,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 .service-icon {
   width: 52px;
   height: 52px;
-  background: var(--accent-light);
+  background-color: #D6EAFA;
   border-radius: 2px;
   display: flex;
   align-items: center;
@@ -567,7 +567,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 }
 
 .why-stat {
-  background: var(--white);
+  background-color: #FFFFFF;
   padding: 28px 32px;
   display: flex;
   align-items: center;
@@ -578,7 +578,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 .why-stat-number {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 52px;
-  color: var(--black);
+  color: #0D0D0D;
   line-height: 1;
 }
 
@@ -591,13 +591,13 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 
 /* ===================== AREAS ===================== */
 #areas {
-  background: var(--black);
+  background-color: #0D0D0D;
   padding: 120px 80px;
   text-align: center;
 }
 
-#areas .section-title { color: var(--white); }
-#areas .section-label { color: var(--accent); }
+#areas .section-title { color: #FFFFFF; }
+#areas .section-label { color: #1E6FAD; }
 
 #areas .section-body {
   color: rgba(255,255,255,0.85);
@@ -619,7 +619,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--white);
+  color: #FFFFFF;
   border: 1px solid rgba(255,255,255,0.2);
   padding: 12px 28px;
   border-radius: 2px;
@@ -627,14 +627,14 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 }
 
 .area-pill:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: #1E6FAD;
+  color: #1E6FAD;
   background: rgba(30,111,173,0.1);
 }
 
 .area-pill.primary {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: #1E6FAD;
+  color: #1E6FAD;
 }
 
 /* ===================== CONTACT ===================== */
@@ -726,7 +726,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--black);
+  color: #0D0D0D;
   margin-bottom: 8px;
 }
 
@@ -734,14 +734,14 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 .form-group select,
 .form-group textarea {
   width: 100%;
-  background: var(--white);
+  background-color: #FFFFFF;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
   padding: 14px 16px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 300;
-  color: var(--black);
+  color: #0D0D0D;
   transition: border-color var(--transition);
   outline: none;
   appearance: none;
@@ -750,7 +750,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--accent);
+  border-color: #1E6FAD;
 }
 
 .form-group textarea {
@@ -766,8 +766,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 
 .form-submit {
   width: 100%;
-  background: var(--black);
-  color: var(--white);
+  background-color: #0D0D0D;
+  color: #FFFFFF;
   border: none;
   padding: 16px 32px;
   font-family: 'Poppins', sans-serif;
@@ -781,7 +781,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   margin-top: 8px;
 }
 
-.form-submit:hover { background: var(--accent); }
+.form-submit:hover { background-color: #1E6FAD; }
 
 .form-success {
   display: none;
@@ -793,19 +793,19 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   font-family: 'Bebas Neue', sans-serif;
   font-size: 36px;
   letter-spacing: 2px;
-  color: var(--accent);
+  color: #1E6FAD;
   margin-bottom: 12px;
 }
 
 .form-success p {
   font-size: 14px;
   font-weight: 300;
-  color: var(--gray-mid);
+  color: #555555;
 }
 
 /* ===================== FOOTER ===================== */
 footer {
-  background: var(--black);
+  background-color: #0D0D0D;
   padding: 64px 80px 32px;
 }
 
@@ -851,7 +851,7 @@ footer {
   transition: color var(--transition);
 }
 
-.footer-col ul li a:hover { color: var(--accent); }
+.footer-col ul li a:hover { color: #1E6FAD; }
 
 .footer-bottom {
   display: flex;
@@ -867,7 +867,7 @@ footer {
 
 .footer-accent-bar {
   height: 3px;
-  background: var(--accent);
+  background-color: #1E6FAD;
   margin-top: 32px;
 }
 
@@ -876,7 +876,7 @@ footer {
   display: none;
   position: fixed;
   top: 72px; left: 0; right: 0;
-  background: var(--white);
+  background-color: #FFFFFF;
   border-bottom: 1px solid #EEEEEE;
   padding: 24px 32px;
   flex-direction: column;
@@ -890,7 +890,7 @@ footer {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  color: var(--black);
+  color: #0D0D0D;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -951,18 +951,11 @@ footer {
   <nav id="navbar">
     <a href="#home" class="nav-logo">
       <div class="nav-icon">
-        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="50,15 88,48 12,48" fill="white"/>
-          <rect x="22" y="46" width="56" height="38" fill="white"/>
-          <rect x="28" y="54" width="16" height="16" fill="#0D0D0D"/>
-          <line x1="28" y1="62" x2="44" y2="62" stroke="white" stroke-width="2"/>
-          <line x1="36" y1="54" x2="36" y2="70" stroke="white" stroke-width="2"/>
-          <rect x="56" y="54" width="16" height="16" fill="#0D0D0D"/>
-          <line x1="56" y1="62" x2="72" y2="62" stroke="white" stroke-width="2"/>
-          <line x1="64" y1="54" x2="64" y2="70" stroke="white" stroke-width="2"/>
-          <rect x="42" y="68" width="16" height="16" fill="#0D0D0D"/>
-          <ellipse cx="50" cy="68" rx="8" ry="8" fill="#0D0D0D"/>
-          <circle cx="50" cy="11" r="5" fill="#1E6FAD"/>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="12,3 22,11 2,11" fill="white"/>
+          <rect x="4" y="10" width="16" height="11" fill="white"/>
+          <rect x="9" y="15" width="6" height="6" fill="#0D0D0D"/>
+          <circle cx="12" cy="1.5" r="1.8" fill="#1E6FAD"/>
         </svg>
       </div>
       <div class="nav-brand">
@@ -1240,7 +1233,9 @@ footer {
     </div>
     <div class="contact-form fade-in">
       <p class="form-title">Request a Free Quote</p>
-      <form id="contactForm" onsubmit="handleSubmit(event)">
+      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+        <input type="hidden" name="form-name" value="contact"/>
+        <p style="display:none;"><label>Do not fill this out: <input name="bot-field"/></label></p>
         <div class="form-row">
           <div class="form-group">
             <label for="firstName">First Name</label>
@@ -1369,11 +1364,23 @@ footer {
 
     fadeEls.forEach(el => observer.observe(el));
 
-    // Form submit
+    // Form submit - Netlify
     function handleSubmit(e) {
       e.preventDefault();
-      document.getElementById('contactForm').style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
+      const form = document.getElementById('contactForm');
+      const formData = new FormData(form);
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(() => {
+        form.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      })
+      .catch((error) => {
+        alert('Something went wrong. Please call (360) 602-1163 directly.');
+      });
     }
   </script>
 
