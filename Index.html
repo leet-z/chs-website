@@ -1233,30 +1233,29 @@ footer {
     </div>
     <div class="contact-form fade-in">
       <p class="form-title">Request a Free Quote</p>
-      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
-        <input type="hidden" name="form-name" value="contact"/>
-        <p style="display:none;"><label>Do not fill this out: <input name="bot-field"/></label></p>
+      <form id="my-form">
+        <div data-fs-error style="color:#c0392b;font-size:13px;margin-bottom:12px;display:none;"></div>
         <div class="form-row">
           <div class="form-group">
             <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Loren" required/>
+            <input type="text" id="firstName" name="firstName" data-fs-field placeholder="Loren" required/>
           </div>
           <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Richardson" required/>
+            <input type="text" id="lastName" name="lastName" data-fs-field placeholder="Richardson" required/>
           </div>
         </div>
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required/>
+          <input type="email" id="email" name="email" data-fs-field placeholder="you@example.com" required/>
         </div>
         <div class="form-group">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="(509) 000-0000"/>
+          <input type="tel" id="phone" name="phone" data-fs-field placeholder="(509) 000-0000"/>
         </div>
         <div class="form-group">
           <label for="service">Service Needed</label>
-          <select id="service" name="service" required>
+          <select id="service" name="service" data-fs-field required>
             <option value="" disabled selected>Select a service...</option>
             <option value="repairs">Home Repairs</option>
             <option value="cabinets">Cabinet Installation</option>
@@ -1269,9 +1268,9 @@ footer {
         </div>
         <div class="form-group">
           <label for="message">Tell Me About Your Project</label>
-          <textarea id="message" name="message" placeholder="Describe what you need done, your address, and your timeline..." required></textarea>
+          <textarea id="message" name="message" data-fs-field placeholder="Describe what you need done, your address, and your timeline..." required></textarea>
         </div>
-        <button type="submit" class="form-submit">Send My Request</button>
+        <button type="submit" class="form-submit" data-fs-submit-btn>Send My Request</button>
       </form>
       <div class="form-success" id="formSuccess">
         <h3>Message Sent!</h3>
@@ -1364,25 +1363,19 @@ footer {
 
     fadeEls.forEach(el => observer.observe(el));
 
-    // Form submit - Netlify
-    function handleSubmit(e) {
-      e.preventDefault();
-      const form = document.getElementById('contactForm');
-      const formData = new FormData(form);
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString()
-      })
-      .then(() => {
-        form.style.display = 'none';
+    // Formspree init
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', {
+      formElement: '#my-form',
+      formId: 'xdapvger',
+      onSuccess: function() {
+        document.getElementById('my-form').style.display = 'none';
         document.getElementById('formSuccess').style.display = 'block';
-      })
-      .catch((error) => {
-        alert('Something went wrong. Please call (360) 602-1163 directly.');
-      });
-    }
+      }
+    });
   </script>
+
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
 </body>
 </html>
