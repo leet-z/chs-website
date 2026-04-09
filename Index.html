@@ -4,7 +4,87 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Collegiate Home Services | Spokane Handyman</title>
+
+  <!-- Primary SEO -->
+
+  <title>Handyman Spokane WA | Collegiate Home Services | Fully Insured</title>
+  <meta name="description" content="Fully insured handyman in Spokane, WA. Collegiate Home Services offers home repairs, cabinet installation, carpentry, remodeling, and general home maintenance in South Hill, Spokane Valley, Liberty Lake & North Spokane. Call (360) 602-1163 for a same-day estimate."/>
+  <meta name="keywords" content="handyman Spokane WA, handyman near me Spokane, home repair Spokane, insured handyman Spokane, home maintenance Spokane WA, Spokane handyman services, cabinet installation Spokane, carpentry Spokane, home improvement Spokane, handyman South Hill Spokane, handyman Spokane Valley, handyman Liberty Lake, general contractor Spokane, home repairs near me, fix it Spokane"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="Loren Richardson, Collegiate Home Services"/>
+  <link rel="canonical" href="https://chspnw.com"/>
+
+  <!-- Open Graph / Social -->
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://chspnw.com"/>
+  <meta property="og:title" content="Handyman Spokane WA | Collegiate Home Services"/>
+  <meta property="og:description" content="Fully insured handyman in Spokane WA. Home repairs, carpentry, installations, remodeling and general maintenance. Same-day estimates available."/>
+  <meta property="og:site_name" content="Collegiate Home Services"/>
+
+  <!-- Local Business Structured Data -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Collegiate Home Services",
+    "description": "Fully insured handyman services in Spokane, WA. Specializing in home repairs, cabinet installation, interior carpentry, remodeling, installations, and general home maintenance.",
+    "url": "https://chspnw.com",
+    "telephone": "+13606021163",
+    "email": "lorenwork@mail.com",
+    "founder": "Loren Richardson",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Spokane",
+      "addressRegion": "WA",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "47.6588",
+      "longitude": "-117.4260"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "14:00"
+      }
+    ],
+    "areaServed": [
+      {"@type": "City", "name": "Spokane"},
+      {"@type": "City", "name": "Spokane Valley"},
+      {"@type": "City", "name": "Liberty Lake"},
+      {"@type": "Neighborhood", "name": "South Hill"},
+      {"@type": "Neighborhood", "name": "North Indian Trail"},
+      {"@type": "Neighborhood", "name": "Browne's Addition"}
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Handyman Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Repairs"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cabinet Installation"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interior Trim and Carpentry"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Remodeling"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "General Home Maintenance"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Installations"}}
+      ]
+    },
+    "priceRange": "$$",
+    "paymentAccepted": "Cash, Check, Card",
+    "currenciesAccepted": "USD"
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
@@ -459,6 +539,14 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
+}
+
+.service-card:last-child:nth-child(3n+1) {
+  grid-column: 1 / -1;
+}
+
+.service-card:nth-last-child(1):nth-child(3n+1) {
+  grid-column: span 3;
 }
 
 .service-card {
@@ -987,14 +1075,14 @@ footer {
 
   <section id="home">
     <div class="hero-left">
-      <div class="hero-badge fade-in">Licensed · Bonded · Insured</div>
+      <div class="hero-badge fade-in">Fully Insured</div>
       <h1 class="hero-headline fade-in">
         Spokane's<br/>
         <em>Handyman</em><br/>
         Done Right.
       </h1>
       <p class="hero-sub fade-in">
-        A college student with 5 years of trade experience and a lifetime of solving problems. Simple pricing, honest work, and I show up when I say I will.
+        A college student with 5 years of trade experience and a lifetime of solving problems. Honest work, clear communication, and I show up when I say I will.
       </p>
       <div class="hero-actions fade-in">
         <a href="#contact" class="btn-primary">Get a Free Quote</a>
@@ -1003,7 +1091,7 @@ footer {
       <div class="hero-trust fade-in">
         <div class="trust-item">
           <strong>4</strong>
-          <span>Licensed Handymen<br/>in Spokane</span>
+          <span>Fully Insured<br/>Every Job</span>
         </div>
         <div class="trust-divider"></div>
         <div class="trust-item">
@@ -1012,8 +1100,8 @@ footer {
         </div>
         <div class="trust-divider"></div>
         <div class="trust-item">
-          <strong>100%</strong>
-          <span>Done Right<br/>Guarantee</span>
+          <strong>Same</strong>
+          <span>Day<br/>Estimates</span>
         </div>
       </div>
     </div>
@@ -1046,31 +1134,32 @@ footer {
   <section id="about">
     <div class="about-left fade-in">
       <p class="section-label">About Collegiate</p>
-      <h2 class="section-title">Built on Honesty.<br/>Powered by Hustle.</h2>
+      <h2 class="section-title">Spokane's Trusted<br/>Insured Handyman</h2>
       <p class="section-body">
         Hi, I'm Loren. I'm a college student and a Spokane local who started Collegiate Home Services to prove something: that showing up on time, communicating clearly, and doing the work right the first time is rare enough to build a business around.
       </p>
       <p class="section-body">
         With 5 years of hands-on trade experience and a lifetime of solving problems, I bring more than just tools to the job. I bring the kind of attention and care that most homeowners have stopped expecting.
       </p>
-      <p class="section-body">
-        Pricing is simple. Book a half day or a full day. You get my complete focus, quality workmanship, and I will not leave until the job is done right.
-      </p>
-    </div>
-    <div class="about-card fade-in">
-      <p class="about-card-quote">The name says it all. <em>Collegiate.</em></p>
-      <p class="about-card-body">
-        This business is tied to college life because I believe the trades offer something that a white collar path cannot always promise: the direct, honest reward of doing something with your hands and doing it well. Collegiate Home Services is proof of that.
-      </p>
-      <div class="about-tags">
-        <span class="about-tag">College Student</span>
-        <span class="about-tag">Spokane Local</span>
-        <span class="about-tag">Licensed</span>
-        <span class="about-tag">Bonded</span>
-        <span class="about-tag">Insured</span>
-        <span class="about-tag">5 Yrs Experience</span>
-      </div>
-    </div>
+
+```
+</div>
+<div class="about-card fade-in">
+  <p class="about-card-quote">The name says it all. <em>Collegiate.</em></p>
+  <p class="about-card-body">
+    I am a college student, and that is exactly why this business is called what it is. The name Collegiate Home Services exists to represent where I am in life right now, but also what I want to build toward. Too many students graduate unsure of their path, told that a white collar career is the only route to success. I want to show them something different, that the trades offer real income, real independence, and real satisfaction. Coming from someone their own age who is building it in real time, that message lands differently. Collegiate Home Services is proof that you can start with your hands and build something you are proud of.
+  </p>
+  <div class="about-tags">
+    <span class="about-tag">College Student</span>
+    <span class="about-tag">Spokane Local</span>
+    <span class="about-tag">Fully Insured</span>
+    <span class="about-tag">5 Yrs Experience</span>
+    <span class="about-tag">Honest Work</span>
+    <span class="about-tag">Same Day Estimates</span>
+  </div>
+</div>
+```
+
   </section>
 
   <!-- SERVICES -->
@@ -1078,7 +1167,8 @@ footer {
   <section id="services">
     <div class="services-header fade-in">
       <p class="section-label">What I Do</p>
-      <h2 class="section-title">Services</h2>
+      <h2 class="section-title">Handyman Services in Spokane, WA</h2>
+      <p style="font-size:15px;font-weight:400;color:#444444;max-width:600px;margin:16px auto 0;line-height:1.7;">From small repairs to large projects, Collegiate Home Services handles the jobs that keep your home running right. Fully insured in Spokane, WA.</p>
     </div>
     <div class="services-grid">
       <div class="service-card fade-in">
@@ -1111,6 +1201,11 @@ footer {
         <h3 class="service-title">Property Maintenance</h3>
         <p class="service-desc">Ongoing home maintenance for property owners and managers. Reliable, communicative, and consistent every visit.</p>
       </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">📋</div>
+        <h3 class="service-title">Honey-Do List & General Maintenance</h3>
+        <p class="service-desc">Got a list of things that need doing around the house? That is exactly what I am here for. Leaky faucet, loose door, broken hinge, stuck window, caulking, weatherstripping, touch-ups, and anything else on your list. No job is too small. Get in touch and we will knock it all out in one visit.</p>
+      </div>
     </div>
   </section>
 
@@ -1119,27 +1214,27 @@ footer {
   <section id="why">
     <div class="why-left fade-in">
       <p class="section-label">Why Choose Us</p>
-      <h2 class="section-title">Different By Design.</h2>
+      <h2 class="section-title">Why Homeowners Call Me Back</h2>
       <div class="why-list">
         <div class="why-item">
           <span class="why-number">01</span>
           <div class="why-content">
-            <h3>One of 4 Licensed Handymen in Spokane</h3>
-            <p>Licensing matters. It means accountability, proper insurance, and protection for your home. Most handymen cannot say the same.</p>
+            <h3>Fully Insured and Accountable</h3>
+            <p>Most handymen operating in Spokane carry no insurance. Being fully insured means you are protected on every job. That is not standard. That is the bar I set for myself.</p>
           </div>
         </div>
         <div class="why-item">
           <span class="why-number">02</span>
           <div class="why-content">
-            <h3>Simple, Honest Pricing</h3>
-            <p>Half day or full day. No hourly clock watching, no surprise invoices. You know the price before I arrive.</p>
+            <h3>Transparent, Upfront Pricing</h3>
+            <p>You get a clear quote upfront and I will not change it without a conversation first. No surprise invoices. No hidden fees.</p>
           </div>
         </div>
         <div class="why-item">
           <span class="why-number">03</span>
           <div class="why-content">
-            <h3>You Always Get More Than You Pay For</h3>
-            <p>If the job takes less time than expected, I find something else to improve. You hired me for the day and I treat it that way.</p>
+            <h3>You Get My Full Attention</h3>
+            <p>I'm not a clock-watcher. If I finish early, I'll ask what else needs attention. You hired me for the time and I treat it that way.</p>
           </div>
         </div>
         <div class="why-item">
@@ -1149,25 +1244,32 @@ footer {
             <p>I show up when I say I will, I call when I say I will, and I keep you updated throughout. Simple as that.</p>
           </div>
         </div>
+        <div class="why-item">
+          <span class="why-number">05</span>
+          <div class="why-content">
+            <h3>Simple Half-Day and Full-Day Rates</h3>
+            <p>No hourly billing. No watching the clock. I offer straightforward half-day and full-day rates so you know exactly what you are getting into before I arrive.</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="why-visual fade-in">
       <div class="why-visual-inner">
         <div class="why-stat">
-          <span class="why-stat-number">4</span>
-          <span class="why-stat-label">Licensed handymen<br/>in all of Spokane</span>
+          <span class="why-stat-number">✓</span>
+          <span class="why-stat-label">Fully insured on<br/>every single job</span>
         </div>
         <div class="why-stat">
           <span class="why-stat-number">5+</span>
           <span class="why-stat-label">Years of hands-on<br/>trade experience</span>
         </div>
         <div class="why-stat">
-          <span class="why-stat-number">2</span>
-          <span class="why-stat-label">Simple pricing options.<br/>Half day or full day.</span>
+          <span class="why-stat-number">½ + 1</span>
+          <span class="why-stat-label">Half-day or full-day rates.<br/>No hourly billing ever.</span>
         </div>
         <div class="why-stat">
-          <span class="why-stat-number">100%</span>
-          <span class="why-stat-label">Done right guarantee.<br/>Every single job.</span>
+          <span class="why-stat-number">↩</span>
+          <span class="why-stat-label">I come back and fix it<br/>if something isn't right.</span>
         </div>
       </div>
     </div>
@@ -1178,7 +1280,7 @@ footer {
   <section id="areas">
     <p class="section-label fade-in">Where I Work</p>
     <h2 class="section-title fade-in">Serving Spokane<br/>and Surrounding Areas</h2>
-    <p class="section-body fade-in">Based in Spokane, I serve homeowners across the greater Spokane area. Same day estimates available.</p>
+    <p class="section-body fade-in">Collegiate Home Services provides insured handyman and home repair services across Spokane and surrounding communities. Whether you are in South Hill, Spokane Valley, Liberty Lake, or North Spokane, same day estimates are available.</p>
     <div class="areas-grid fade-in">
       <span class="area-pill primary">South Hill</span>
       <span class="area-pill primary">North Spokane</span>
@@ -1198,7 +1300,7 @@ footer {
   <section id="contact">
     <div class="contact-info fade-in">
       <p class="section-label">Get In Touch</p>
-      <h2>Ready to Get<br/>It Done Right?</h2>
+      <h2>Get a Free Estimate from Your Spokane Handyman</h2>
       <p>Fill out the form and I will get back to you the same day. No automated responses, no runaround. Just me, ready to help.</p>
       <div class="contact-details">
         <div class="contact-detail">
@@ -1305,7 +1407,7 @@ footer {
             <span style="color:rgba(255,255,255,0.75);">Home Services</span>
           </div>
         </div>
-        <p>Licensed, bonded, and insured handyman services in Spokane, WA. Honest work. Simple pricing. Done right.</p>
+        <p>Fully insured handyman services in Spokane, WA. Honest work. Transparent pricing. Done right.</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -1329,7 +1431,7 @@ footer {
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Collegiate Home Services LLC · Spokane, WA · License Pending</p>
+      <p>© 2026 Collegiate Home Services LLC · Insured Handyman · Spokane, WA</p>
       <p>chspnw.com</p>
     </div>
     <div class="footer-accent-bar"></div>
